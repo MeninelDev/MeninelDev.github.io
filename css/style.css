@@ -53,9 +53,8 @@ nav.navbar-transparente {
 
 .logo, .logo:hover{
     color: white;
-    font-weight: 400;
+    font-weight: 600;
     text-decoration: none;
-    font-family: helvetica;
     font-size: 1.6rem;
     padding-bottom: 3px;
 }
@@ -253,7 +252,7 @@ footer ul li {
     }
     section .row .capa h1 {
         text-transform: uppercase;
-        font-size: 50.5px;
+        font-size: 48.5px;
         font-weight: 500;
         font-family: 'Work Sans', sans-serif;
         color:#F6F6F8;
@@ -268,9 +267,13 @@ footer ul li {
         font-size: 40px !important;
         line-height: 1.2em !important;
     }
-    h1:hover,h3:hover {
-        letter-spacing: 2px;
-        transition: all .5s;
+    
+    #cartoes h2 {
+        font-size: 28.3px;
+        color: #ffffff;
+        font-weight: 200;
+        margin-bottom: 15px;
+        text-transform: uppercase;
     }
 }
 
@@ -294,12 +297,6 @@ footer ul li {
         line-height: 1.2em;
         font-weight: 500;
         color: #D41F24;
-    }
-    
-    
-    h1:hover,h3:hover {
-        letter-spacing: 2px;
-        transition: all .5s;
     }
     
 }

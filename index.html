@@ -37,7 +37,7 @@
           <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
               <div class="container">
                 <a href="index.html" class="navbar-brand">
-                  <i class="fas fa-code fa-lg text-light mb-2"></i><a href="" class="logo">Gabriel Meninel</a>
+                  <i class="fas fa-code fa-lg text-light mb-2"> </i><a href="" class="logo mr-auto">Gabriel Meninel</a>
                 </a>
 
                 <button class="navbar-toggler"  style="border: none;" data-toggle="collapse" data-target="#nav-menu-principal">
@@ -62,31 +62,30 @@
       </header><!--/Cabeçalho-->
  
       <section id="home" class="d-flex"><!--Inicio Home-->
-        <div class="container align-self-center">
-          <div class="row">
+        <div class="container align-self-center"><!--container-->
+          <div class="row"><!--row-->
             <div class="col-md-12 capa">
               
-              <div class="carousel slide" data-ride="carousel"><!--Inicio carousel-->
+              <div id="carousel-menineldev" class="carousel slide" data-ride="carousel"><!--Inicio carousel-->
                 <div class="carousel-inner"><!--inner-->
-                  <div class="carousel-item">
+                  <div class="carousel-item float-left">
                     <h1 class="transition">Gabriel Meninel</h1>
                     <h3 class="transition">Desenvolvedor Front-End</h3>  
                   </div>
 
                   <div class="carousel-item active">
-                    <img src="img/foto-meninel.png" class="rounded-circle float-left" alt="Gabriel Meninel">
+                    <img src="img/foto-meninel.png" class="rounded-circle float-left d-none d-md-block" alt="Gabriel Meninel">
                     <div class="float-left ml-4">
                       <h4 class="text-white h4-text">Gabriel Meninel</h4>
                       <h5 class="text-secondary h5-text">Desenvolvedor Front-End</h5> 
                       <p></p>
                     </div>
                   </div>
-
                 </div><!--/inner-->
 
               </div><!--/carousel-->
             </div>
-          </div>
+          </div><!--/row-->
         </div>
 
       </section><!--/Home-->
@@ -136,7 +135,7 @@
             </div>
             <div class="col-md-6">
                   <div class="card bg-transparent" style="border: none;">
-                    <img class="card-img-bottom rounded-circle" src="img/andrade.jpg">
+                    <img class="card-img-bottom rounded-circle d-none d-md-block" src="img/andrade.jpg">
                     <div class="card-body">
                       <h4 class="card-title text-white transition">Anderson Andrade</h4>
                       <h6 class="card-subtitle mb-2 transition">Analista de Sistemas</h6>
@@ -175,7 +174,6 @@
         </div>
       </footer>
           
-    
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
