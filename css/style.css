@@ -1,0 +1,333 @@
+/* Htmls 5 e css reset minified
+--------------------------------*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+/* Layout
+---------------------*/
+html, body,#home {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+    animation: changeBackgroundColor 7s infinite;
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Animação
+---------------------*/
+@keyframes changeBackgroundColor {
+    0%{
+        background-color:#1f3e7e;
+    }
+    50%{   
+        background-color:#334686;
+    }
+    100%{
+        background-color:#1f3e7e;
+    }
+}
+  
+
+/* Barra de Navegação
+---------------------*/
+nav.navbar-transparente {
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.logo, .logo:hover{
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: helvetica;
+    font-size: 1.6rem;
+    padding-bottom: 3px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:white;
+}
+
+/* Estrutura dos conteudos
+--------------------------------*/
+.capa {
+    text-align: left;
+}
+
+#conteudo {
+    background: white;
+}
+#cartoes {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.caixa {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.divisor {
+    padding: 10px 0px;
+}
+
+.arredondaimg {
+    border-radius: 5%;
+    margin-bottom: -70px;
+}
+
+.sobreimg {
+    border-radius: 5%;
+    margin-top: 20px;
+    margin-left: 74px;
+}
+
+
+/* Tipografia
+--------------------------------*/
+.transition:hover {
+    letter-spacing: 1.5px;
+    transition: all .5s;
+}
+
+section .row .capa h1 {
+    text-transform: uppercase;
+    font-size: 58.5px;
+    font-weight: 500;
+    color:#F6F6F8;
+}
+
+section .row .capa h3 {
+    text-transform: uppercase;
+    font-size: 46px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #D41F24;
+}
+
+.h4-text {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    font-weight: 500;
+    font-family:'Work Sans', sans-serif; ;
+}
+.h5-text {
+    font-size: 1em;
+    line-height: 1.2em;
+    font-weight: 800;
+    font-style: italic;
+}
+
+#conteudo h2 {
+    font-size: 32.3px;
+    color: #D41F24;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+
+#cartoes h2 {
+    font-size: 32.3px;
+    color: #ffffff;
+    font-weight: 200;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#cartoes h4 {
+    font-weight: 500;
+    font-size: 1.6em;
+}
+
+#cartoes h6 {
+    color: #D41F24;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+#cartoes p {
+    color: #F6F6F8;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+#conteudo p a {
+    color: #0f54df;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#conteudo .container ul li {
+    list-style-type: disc;
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.5em;
+    font-family: 'Raleway', sans-serif;
+}
+
+#conteudo .container span {
+    font-weight: bold;
+    font-size: 1.3em;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#conteudo p {
+    line-height: 1.5em;
+    font-size: 20px;
+    color: #080202;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 27px;
+    font-weight: 500;
+     
+}
+#conteudo p:hover {
+    letter-spacing: .3px;
+    transition: all .5s;
+}
+
+h2{
+   font-size: 3em;
+   font-weight: 700;
+}
+
+h3{
+   font-size: 2em;
+   font-weight: 700;
+}
+
+ul li a {
+    font-size: 1.1em;
+    color: white;
+}
+/* Footer
+---------------------------------*/
+
+footer {
+    background: #000;
+    padding: 50px 0px 20px 0px ;
+    position: relative;
+}
+
+footer .navbar-nav a {
+    color: white;
+    font-size: 1em;
+}
+
+footer .navbar-nav a:hover {
+    color: #9fbefc;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0 10px;
+}
+
+/* Media Querys
+--------------------------------*/
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #9fbefc;
+    }
+    section .row .capa h1 {
+        text-transform: uppercase;
+        font-size: 50.5px;
+        font-weight: 500;
+        font-family: 'Work Sans', sans-serif;
+        color:#F6F6F8;
+    }
+    section .row .capa h3 {
+        text-transform: uppercase;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 500;
+        color: #D41F24;
+    }
+    .capa h3 {
+        font-size: 40px !important;
+        line-height: 1.2em !important;
+    }
+    h1:hover,h3:hover {
+        letter-spacing: 2px;
+        transition: all .5s;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #9fbefc;
+    }
+    section .row .capa h1 {
+        text-transform: uppercase;
+        font-size: 55.5px;
+        font-weight: 500;
+        font-family: 'Work Sans', sans-serif;
+        color:#F6F6F8;
+    }
+    section .row .capa h3 {
+        text-transform: uppercase;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 45px;
+        line-height: 1.2em;
+        font-weight: 500;
+        color: #D41F24;
+    }
+    
+    
+    h1:hover,h3:hover {
+        letter-spacing: 2px;
+        transition: all .5s;
+    }
+    
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #9fbefc;
+        border-bottom: 1px solid #9fbefc;
+        
+    }
+   
+}
+
+/*  Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #9fbefc;
+        border-bottom: 1px solid #9fbefc;
+    }
+    
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #9fbefc;
+        border-bottom: 1px solid #9fbefc;
+    }
+        
+}
