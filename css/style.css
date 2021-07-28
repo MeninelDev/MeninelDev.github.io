@@ -108,7 +108,6 @@ section .row .capa h1 {
     text-transform: uppercase;
     font-size: 58.5px;
     font-weight: 500;
-    color:#F6F6F8;
 }
 
 section .row .capa h3 {
@@ -116,7 +115,6 @@ section .row .capa h3 {
     font-size: 46px;
     line-height: 1.2em;
     font-weight: 400;
-    color: #D41F24;
 }
 
 .h4-text {
@@ -134,7 +132,6 @@ section .row .capa h3 {
 
 #conteudo h2 {
     font-size: 32.3px;
-    color: #D41F24;
     font-weight: 400;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -155,7 +152,6 @@ section .row .capa h3 {
 }
 
 #cartoes h6 {
-    color: #D41F24;
     font-weight: 500;
     font-size: 1.3em;
 }
@@ -261,7 +257,6 @@ footer ul li {
         text-transform: uppercase;
         font-family: 'Work Sans', sans-serif;
         font-weight: 500;
-        color: #D41F24;
     }
     .capa h3 {
         font-size: 40px !important;
@@ -296,7 +291,6 @@ footer ul li {
         font-size: 45px;
         line-height: 1.2em;
         font-weight: 500;
-        color: #D41F24;
     }
     
 }
