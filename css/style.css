@@ -65,6 +65,13 @@ nav.navbar-transparente {
 
 /* Estrutura dos conteudos
 --------------------------------*/
+.btn-custom {
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
 .capa {
     text-align: left;
 }
@@ -172,7 +179,7 @@ section .row .capa h3 {
     list-style-type: disc;
     font-size: 1.1em;
     font-weight: 500;
-    line-height: 1.5em;
+    line-height: 1.4em;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -237,6 +244,11 @@ footer ul {
 footer ul li {
     float: right;
     margin: 0 10px;
+}
+
+footer p {
+    color: #e1e1e2;
+    padding-bottom: 30px;
 }
 
 /* Media Querys
