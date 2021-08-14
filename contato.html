@@ -15,32 +15,6 @@
 
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/098e7966ac.js" crossorigin="anonymous"></script>
-    <script>
-        function Enviar() {
-
-            var nome = document.getElementById("nomeid");
-
-            if (nome.value != "") {
-                alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
-            }
-        }
-            var request = require('request'); //bash: npm install request
-            // URL for request POST /message
-            var token = '83763g87x';
-            var instanceId = '777';
-            var url = `https://api.chat-api.com/instance${instanceId}/message?token=${token}`;
-            var data = {
-                phone: '73988831153', // Receivers phone
-                body: 'Hello, world!', // Message
-            };
-            // Send a request
-            request({
-                url: url,
-                method: "POST",
-                json: data
-            });
-    </script>
-
     <!--Custom CSS-->
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/style.css">
@@ -62,7 +36,6 @@
 </head>
 
 <body>
-    <header>
         <!--Inicio Cabeçalho-->
         <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
             <div class="container">
@@ -80,7 +53,7 @@
                     <!--Inicio Menu Princinpal-->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="" class="nav-link">Home</a>
+                            <a href="index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">Portfólio</a>
@@ -93,47 +66,52 @@
             </div>
         </nav>
         <!--Formulario de Contato-->
-        <div class="columns">
-            <div class="column is-half">
-                <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
-                    <!-- Replace with your StaticForms accessKey -->
-                    <input type="hidden" name="accessKey" value="3b2d4c7a-a027-4c37-ad54-a2e114a029dd">
-                    <input type="hidden" name="subject" value="Test from jsfiddle">
-                    <!-- Replace with the url you want to redirect to -->
-                    <div class="field">
-                        <label class="label">Nome</label>
-                        <div class="control">
-                            <input class="input" type="text" name="name" placeholder="Digite Seu Nome" required>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label">Email</label>
-                        <div class="control">
-                            <input class="input" type="email" name="email" placeholder="Digite Seu Email" required>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label">Telefone</label>
-                        <div class="control">
-                            <input class="input" type="phone" name="phone" placeholder="Digite Seu Telefone" required>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <label class="label">Mensagem</label>
-                        <div class="control">
-                            <textarea class="textarea" name="Mensagem" placeholder="Mensagem" required></textarea>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-success enviar" onclick="Enviar();"
-                        value="Enviar">Enviar</button>
-                        <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=+5573988922901" target="_blank">
-                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                        </a>
-                </form>
+        <div class="container contact-form shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="contact-image">
+                <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
             </div>
+            <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+                <!-- Replace with your StaticForms accessKey -->
+                <input type="hidden" name="accessKey" value="3b2d4c7a-a027-4c37-ad54-a2e114a029dd">
+                <input type="hidden" name="subject" value="Test from jsfiddle">
+                <input type="hidden" name="redirectTo" value="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                <!-- Replace with the url you want to redirect to -->
+                <!--inicio-->
+                <h3>Deixe uma mensagem</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input class="input form-control" type="text" name="name" placeholder="Digite Seu Nome"
+                                required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input class="input form-control" type="email" name="email" placeholder="Digite Seu Email"
+                                required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input class="input form-control" type="phone" name="phone"
+                                placeholder="Digite Seu Telefone" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Sua Mensagem*"
+                                style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <button type="submit" class="btnContact" onclick="Enviar();"
+                                value="Enviar">Enviar</button>
+                        </div>
+                    </div>
+                </div>
         </div>
-        </div>
-        <!--fim teste-->
 </body>
 
 </html>
